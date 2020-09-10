@@ -1,0 +1,35 @@
+smntin@mbp-smn bla % id
+uid=501(smntin) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae),701(com.apple.sharepoint.group.1)
+smntin@mbp-smn bla % date
+Thu Sep 10 14:37:56 MSK 2020
+smntin@mbp-smn bla % pwd
+/Users/smntin/bla
+smntin@mbp-smn bla % ls
+2lines.txt	5lines.txt	digits.txt
+smntin@mbp-smn bla % ls -l
+total 280
+-rw-r--r--  1 smntin  staff     22 Sep 10 14:24 2lines.txt
+-rw-r--r--  1 smntin  staff  87098 Sep 10 14:34 5lines.txt
+-rw-r--r--  1 smntin  staff     11 Sep 10 14:22 digits.txt
+smntin@mbp-smn bla % mkdir bla2
+smntin@mbp-smn bla % cd bla2
+smntin@mbp-smn bla2 % cd ..
+smntin@mbp-smn bla % rm -rf bla2
+smntin@mbp-smn bla % mkdir work && cd work
+smntin@mbp-smn work % nano digits.txt
+smntin@mbp-smn work % cat digits.txt
+0123456789
+smntin@mbp-smn work % (cat digits.txt && cat digits.txt) >> 2lines.txt
+smntin@mbp-smn work % (cat 2lines.txt && cat 2lines.txt) >> 4lines.txt
+smntin@mbp-smn work % (cat 4lines.txt && cat 4lines.txt) >> 8lines.txt
+smntin@mbp-smn work % (cat 8lines.txt && cat 8lines.txt) >> 16lines.txt
+smntin@mbp-smn work % (cat 16lines.txt && cat 16lines.txt) >> 32lines.txt
+smntin@mbp-smn work % (cat 32lines.txt && cat 32lines.txt) >> 64lines.txt
+smntin@mbp-smn work % (cat 64lines.txt && cat digits.txt) >> 65lines.txt
+smntin@mbp-smn work % wc -l 65lines.txt
+      65 65lines.txt
+smntin@mbp-smn work % head -5 /etc/passwd > a
+smntin@mbp-smn work % tail -5 /etc/passwd > b
+smntin@mbp-smn work % ls -l /etc/* > c
+smntin@mbp-smn work % cat c | wc -l
+     246
