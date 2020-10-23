@@ -1,1 +1,14 @@
-# print your commands
+smntin@mbp-smn Linux-basics-2020 % docker build -t 07-image .
+smntin@mbp-smn Linux-basics-2020 % docker run -it --rm -d -p 65432:65432 07-image                          
+6f10d28017fe533d93d07933bf8a75bbb122bf1fc368b86ccc64bd0a7077768d
+smntin@mbp-smn Linux-basics-2020 % telnet localhost 65432                                                      
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+A
+OK:A
+B
+OK:B
+^]
+telnet> quit
+Connection closed.
